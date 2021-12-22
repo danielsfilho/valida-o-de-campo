@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    div {
+      margin: 20px 0;
+    }
+
+    .inputError {
+      border: 1px solid red;
+      
+    }
+
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="registerForm" action="gravarDados.html">
+    <div>
+      <label>
+        Name
+        <input type="text" name="name">
+        <span class="error"></span>
+      </label>
+    </div>
+
+    <div>
+      <label>
+        Email
+        <input type="text" name="email">
+        <span class="error"></span>
+      </label>
+    </div>
+
+    <div>
+      <label>
+        City
+        <select name="city">
+          <option value="">-- Select --</option>
+          <option value="São Paulo">São Paulo</option>
+          <option value="Rio de Janeiro">Rio de Janeiro</option>
+          <option value="São Paulo">Belo Horizonte</option>
+        </select>
+        <span class="error"></span>
+      </label>
+    </div>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
